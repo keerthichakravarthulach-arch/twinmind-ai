@@ -13,9 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TwinMind Live Suggestions",
+  title: {
+    default: "TwinMind Live Suggestions",
+    template: "%s | TwinMind",
+  },
   description:
-    "Real-time AI meeting copilot that transcribes conversations and provides live suggestions using Groq models.",
+    "Real-time AI meeting copilot that transcribes conversations and provides live suggestions.",
 };
 
 export default function RootLayout({
